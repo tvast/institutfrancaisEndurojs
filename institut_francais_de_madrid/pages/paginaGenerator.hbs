@@ -1,0 +1,90 @@
+
+
+{{#> body}}
+
+		{{#if display_edit_stamp}}
+			<a class="enduro_stamp" href="/admin">
+				<div>Edit this page</div>
+				<div>{{>enduro_e}}</div>
+			</a>
+		{{/if}}
+
+		  <div class=" demo">
+     <div class="content">
+      <div id="large-header" class="large-header">
+
+       <canvas id="demo-canvas"></canvas>
+       <div class="panel screen" style="background-image: url('{{logo}}')">
+			<div class="veil"></div>
+			<div class="panel_body fullwidth">
+
+				<div class="contentbox">
+					<div class="contentbox_content">
+						<h1>{{name}}</h1>
+						<h2>{{specialty}}</h2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+      
+
+
+
+
+
+     </div>
+     <div class="center">
+       <a data-activates="slide-out" class="button-collapse red center waves-effect service waves-light btn">Choisissez votre service</a>
+       <br>
+     </div>
+     
+   </div>
+ </div>
+
+		<div class="panel screen" style="background-image: url('{{main_image}}')">
+			<div class="veil"></div>
+			<div class="panel_body fullwidth">
+
+				<div class="contentbox">
+					<div class="contentbox_content">
+						<h1>{{name}}</h1>
+						<h2>{{specialty}}</h2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="panel">
+			<div class="panel_body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<h1>{{name}}</h1>
+						<h2>{{specialty}}</h2>
+						<p>{{background}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel projects">
+			<div class="panel_body fullwidth">
+
+				{{#each projects}}
+					<a href="{{link}}" target="_blank" class="project" style="background-image: url('{{image}}')">
+						<div class="project_info">
+							<div class="project_name">{{title}}</div>
+						</div>
+					</a>
+				{{/each}}
+
+			</div>
+		</div>
+
+		<article>
+    <h1>{{blog_title}}</h1>
+    <p>{{blog_text}}</p>
+</article>
+
+{{/body}}
